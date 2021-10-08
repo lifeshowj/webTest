@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집 꾸미기</title>
+    <link rel="stylesheet" href="css/common.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <h1><a href="index.html">로고</a></h1>
+        <nav id="gnbWrap">
+            <h2 class="hidden">이용메뉴</h2>
+            <ul id="gnb">
+                <li><!-- 마우스 엔터 리브 시에만 보여지는 리스트 -->
+                    <a href="#">카테고리</a>
+                    <ul class="snb slot">
+                        <li><a href="#">가구</a></li> <!-- 각각 사진이 다 들어갈 예정 오늘의집 카테고리 참고 -->
+                        <li><a href="#">가전</a></li>
+                        <li><a href="#">주방</a></li>
+                        <li><a href="#">수납/정리</a></li>
+                        <li><a href="#">조명</a></li>
+                        <li><a href="#">소픔</a></li>
+                        <li><a href="#">공구</a></li>
+                        <li><a href="#">생필품</a></li>
+                        <li><a href="#">취미</a></li>
+                        <li><a href="#">DIY</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">스토어</a>
+                    <ul class="snb">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">특가</a></li>
+                        <li><a href="#">공간</a></li>
+                        <li><a href="#">기획</a></li>
+                    </ul>
+                </li> <!-- 리스트는 전부 가로배열로 보여지게 할 예정 -->
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="snb">
+                        <li><a href="#">집들이</a></li>
+                        <li><a href="#">인테리어 팁</a></li>
+                        <li><a href="#">QnA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">가구제작</a>
+                    <ul class="snb">
+                        <li><a href="#">제휴업체</a></li>
+                        <li><a href="#">제작문의</a></li>
+                        <li><a href="#">DIY</a></li>
+                        <li><a href="#">제작후기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="search">
+            <input type="text" placeholder="통합검색">
+        </div>
+        <nav id="loginWrap">
+            <h2 class="hidden">로그인메뉴</h2>
+            <ul id="login">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#" class="cart">장바구니</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="event">
+        <div id="eventWrap">
+            <ul class="eventList">
+                <li class="eSlider1 on"><a href="#">자세히알아보기</a></li>
+                <li class="eSlider2"><a href="#">자세히알아보기</a></li>
+                <li class="eSlider3"><a href="#">자세히알아보기</a></li>
+                <li class="eSlider4"><a href="#">자세히알아보기</a></li>
+                <li class="eSlider5"><a href="#">자세히알아보기</a></li>
+                <li class="eSlider6"><a href="#">자세히알아보기</a></li>
+            </ul>
+        </div>
+        <div id="posBtn">
+            <a href="#" class="prev">prev</a>
+            <a href="#" class="next">next</a>
+        </div>
+        <div id="numBtn">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+        </div>
+    </div>
+    <section id="contentWrap">
+        <h2 class="hidden">메인</h2>
+        <section id="sale">
+            <div id="saleWrap"> <!-- 컨버스 모방 -->
+                <h2>특가상품</h2>
+                <a href="">더 보기</a>
+                <div id="scale">
+                    <div class="scale1 block">
+                        <div class="big show">
+                            <p class="big1">2022 New <span>Be</span>spoke 냉장고</p>
+                            <p class="big2">다양한 Bespoke냉장고 <span>특가</span>로 만나보세요</p>
+                            <a href="">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div class="scale2 block">
+                        <div class="side show">
+                            <p>USA 정형외과 의사들의 침대</p>
+                            <p>과학과 의학의 만남 <span>Sealy</span></p>
+                            <a href="">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div class="scale3 block">
+                        <div class="side1 show">
+                            <p>LG코드<span>제로</span>A9</p>
+                            <p>공간 전체를 조화롭게 <span>Objet Collection</span></p>
+                            <a href="">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bestWrap">
+            <h2>Best상품</h2>
+            <a href="#">더 알아보기</a>
+            <div id="best">
+                <div></div> <!-- div안에는 모두 사진이 들어갈 예정-->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <section id="keywordSection">
+            <div id="keywordWrap">
+                <h2>오늘의 키워드</h2>
+                <p>
+                    오늘 하루는 어떠셨나요<br>
+                    오늘의 해시태그
+                </p>
+            </div>
+            <div id="keywordImg"></div> <!-- 총 세가지의 이미지를 넣고-->
+            <div id="hashTag">
+                <ul>
+                    <li>
+                        <p>#해시태그</p> <!-- 해시태그 클릭 시 이미지가 fadeIn -->
+                        <a href="#">더알아보기</a>
+                    </li>
+                    <li>
+                        <p>#해시태그</p>
+                        <a href="#">더알아보기</a>
+                    </li>
+                    <li>
+                        <p>#해시태그</p>
+                        <a href="#">더알아보기</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="todayBestWrap">
+            <h2>오늘의 인기상품</h2>
+            <a href="#">더 알아보기</a>
+            <div id="todayBest">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <section id="homeView"> <!-- 삼성전자 사이트 슬라이드 모방 -->
+            <h2>랜선 집들이</h2>
+            <div id="homeSlider">
+                <ul id="homeSliderList"><!-- 회원들의 집들이 사진이 들어감 -->
+                    <li><p>누구누구 님의 랜선집들이 환영합니다</p><a href="#">집으로 입장</a></li> 
+                    <li><p>누구누구 님의 랜선집들이 환영합니다</p><a href="#">집으로 입장</a></li> 
+                    <li><p>누구누구 님의 랜선집들이 환영합니다</p><a href="#">집으로 입장</a></li> 
+                    <li><p>누구누구 님의 랜선집들이 환영합니다</p><a href="#">집으로 입장</a></li> 
+                    <li><p>누구누구 님의 랜선집들이 환영합니다</p><a href="#">집으로 입장</a></li> 
+                </ul>
+            </div>
+            <div id="pBtn">
+                <a href="#">누구누구님</a>
+                <a href="#">누구누구님</a>
+                <a href="#">누구누구님</a>
+                <a href="#">누구누구님</a>
+                <a href="#">누구누구님</a>
+            </div>
+        </section>
+    </section>
+    <footer id="footer">
+        <a href="#">고객센터</a>
+        <p></p>        
+        <p></p>        
+        <p></p>        
+        <p></p>        
+        <address></address>
+        <div id="sns">
+            <ul class="icon">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,345 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+.jejugothic * { 
+ font-family: 'Jeju Gothic', sans-serif;
+}
+/* 초기화 */
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: #000;}
+li { list-style: none; }
+.hidden { position: absolute; left: -9999px; }
+/* header */
+body { 
+    margin: 15px 0;
+    width: 100%; 
+    min-width: 1800px; }
+#header { 
+    width: 100%; height: 100px;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(179, 178, 178)
+}
+#header::before { 
+    content: ""; 
+    position: absolute; top: 49px;
+    width:100%; 
+    border-bottom: 1px solid rgb(194, 190, 190) 
+    }
+#header h1 {
+    margin-Left: 200px;
+    width: 170px; height: 50px;
+}
+#header h1 a { 
+    width: 170px; height: 50px;
+    display: block;
+    background: url(../images/headerBG.png) no-repeat center / contain;
+    text-indent: -9999px;
+}
+/* nav */
+#gnbWrap {
+    position: absolute; top: 0; left: 400px;
+    width: 600px; height: 50px;
+    /* overflow: hidden; */
+}
+#gnb > li {
+    width: 150px; height: 50px;
+    float: left;
+    text-align: center;
+}
+#gnb > li> a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+
+#gnb .snb  {
+    display: none;
+    width: 1000px;    
+}
+#gnb .snb li {
+    width: 90px; height: 50px;
+    float: left;
+}
+#gnb .snb li a {
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#gnb .snb li a:hover {
+    color: #fb7266;
+}
+/* search */
+#search {
+    width: 200px; height: 25px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5%;
+    position: absolute; top: 5px; right: 650px;
+    background: url(../images/searchbg.png) no-repeat 5px / 20px;
+}
+#search input{
+    float: right;
+    width: 170px;
+    height: 25px;
+    border: none;
+}
+
+/* login */
+#loginWrap {
+    position: absolute; top: 13px; right: 100px;
+    width: 500px; height: 50px;
+}
+#login {
+    width: 500px; height: 50px;
+}
+#login li {
+    float: left;
+    width: 80px; height: 50px;
+}
+#login li a {
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#login li a:hover {
+    color: #ef8d78;
+}
+#login li .cart {
+    display: block;
+    width: 40px; height: 25px;
+    text-indent: -9999px;
+    background: url(../images/cart.png) no-repeat center/ contain;
+}
+/* event */
+#event {
+    width: 100%; height: 95vh;
+    position: relative;
+}
+#eventWrap { 
+    position: relative;
+    width: 1800px; height: 85vh;
+    margin: 5px auto 0;
+    overflow: hidden;
+}
+#eventWrap .eventList {
+    width: 1800px; height: 85vh;
+    text-align: right;
+}
+#eventWrap .eventList li {
+    position: absolute; top: 0; left: 0;
+    width: 1800px; height: 85vh;
+    background: no-repeat center / cover
+}
+#eventWrap .eventList li a {
+    position: relative; top: 80vh; right: 40px;
+    padding: 5px;
+    background: #e0dddd;
+    opacity: 0.7;
+    font-size: 30px;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#eventWrap .eventList .eSlider1 { background-image: url(../images/eventbg1.png) }
+#eventWrap .eventList .eSlider2 { background-image: url(../images/eventbg2.png) }
+#eventWrap .eventList .eSlider3 { background-image: url(../images/eventbg3.png) }
+#eventWrap .eventList .eSlider4 { background-image: url(../images/eventbg4.png) }
+#eventWrap .eventList .eSlider5 { background-image: url(../images/eventbg5.png) }
+#eventWrap .eventList .eSlider6 { background-image: url(../images/eventbg6.png) }
+#eventWrap .on { z-index: 1; }
+/* 버튼 */
+#posBtn .prev {
+    width: 60px; height: 60px;
+    text-indent: -9999px;
+    position: absolute; top: 40%; left: 50px;
+    background: url(../images/prevbg.png) no-repeat center / cover;
+    z-index: 9;
+}
+#posBtn .prev:hover {
+    background-image: url(../images/prev1.png)
+}
+#posBtn .next {
+    width: 60px; height: 60px;
+    text-indent: -9999px;
+    position: absolute; top: 40%; right: 50px;
+    z-index: 9;
+    background: url(../images/nextbg.png) no-repeat center / cover;
+}
+#posBtn .next:hover {
+    background-image: url(../images/next1.png)
+}
+
+#numBtn { 
+    z-index: 99999;
+    width: 168px; height: 20px; 
+    position: relative; bottom: 80px; left: calc(50% - 84px); 
+}
+#numBtn a {
+    text-indent: -9999px;
+    width: 22px; height: 22px;
+    margin: 0 3px;
+    display: block;
+    float: left;
+    background: url(../images/numbtn1.png) no-repeat center / contain;
+}
+#numBtn .active {
+    background-image: url(../images/numbtn2.png);
+}
+/* sale product */
+#sale { 
+    width: 100%; height: 110vh;
+}
+#saleWrap {
+    width: 90%; height: 100vh;
+    margin: 0 auto;
+    
+}
+#scale {
+    width: 100%; height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#scale .block {
+    overflow: hidden;
+}
+#scale .show {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out; 
+}
+#scale .show:hover {
+    transform: scale(1.03);
+    }
+#saleWrap h2 { 
+    font-size: 30px;
+    font-family: 'Jeju Gothic', sans-serif;
+    margin-bottom: 10px;
+}
+#saleWrap > a {
+    display: block;
+    margin-bottom: 10px;
+    width: 70px;
+    font-size: 20px;
+    color: #f15c4b;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap > a:hover {
+    color: #3dbcdb;
+}
+#saleWrap .scale1 {
+    width: 50%; height: 100vh;
+    float: left;
+}#saleWrap .scale2 {
+    width: 50%; height: 50vh;
+    float: right;
+}#saleWrap .scale3 {
+    width: 50%; height: 50vh;
+    float: right;
+}
+#saleWrap .big {
+    width: 100%; height: 100vh;
+    float: left;
+    background: url(../images/salebg1.jpg) no-repeat center / cover;
+}
+#saleWrap .big1 {
+    padding: 50px 0 0 40px;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Jeju Gothic', sans-serif;
+    text-transform: uppercase;
+}
+#saleWrap .big1 span {
+    font-size: 53px;
+    font-weight: bold;
+}
+#saleWrap .big2 {
+    padding: 0 0 40px 40px;
+    font-size:30px;
+    color: #fff;
+    font-family: 'Jeju Gothic', sans-serif;
+    text-transform: uppercase;
+}
+#saleWrap .big2 span {
+    font-weight: bold;
+    color: #e44433;
+}
+#saleWrap .big a {
+    padding: 5px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #5f5f5f;
+    opacity: 0.8;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .big a:hover {
+    opacity: 1;
+}
+#saleWrap .side {
+    width: 100%; height: 50vh;
+    background: url(../images/salebg2.jpg) no-repeat center / cover;
+}
+#saleWrap .side p:nth-child(1) {
+    padding: 30px 0 0 30px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .side p:nth-child(2) {
+    margin-bottom: 20px;
+    padding: 10px 0 0 30px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .side p span {
+    font-weight: bold;
+    color: #e44433;
+}
+#saleWrap .side a {
+    width: 100px;
+    margin-left: 30px;
+    padding: 6px;
+    color: #fff;
+    opacity: 0.8;
+    background-color: #5f5f5f;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .side a:hover {
+    opacity: 1;
+}
+#saleWrap .side1 {
+    width: 100%; height: 50vh;
+    background: url(../images/salebg3.jpg) no-repeat bottom / cover;
+}
+#saleWrap .side1 p:nth-child(1) {
+    padding: 30px 0 0 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .side1 p:nth-child(1) span {
+    color: #ac0000;
+}
+#saleWrap .side1 p:nth-child(2) {
+    margin-bottom: 20px;
+    padding: 10px 0 0 30px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .side1 p:nth-child(2) span {
+    font-weight: bold;
+    color: #ac0000;
+}
+#saleWrap .side1 a {
+    width: 100px;
+    margin-left: 30px;
+    padding: 6px;
+    color: #fff;
+    opacity: 0.8;
+    background-color: #5f5f5f;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#saleWrap .side1 a:hover {
+    opacity: 1;
+}
