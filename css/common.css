@@ -136,15 +136,26 @@ body {
 #eventWrap .eventList li {
     position: absolute; top: 0; left: 0;
     width: 100%; height: 900px;
-    background: no-repeat center / cover
+    background: no-repeat center / cover;
+    
+}
+#eventWrap .eventList li::after {
+    content:"";
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 900px;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -9999;
 }
 #eventWrap .eventList .eSlider1 { background-image: url(../images/eventbg1.jpg) }
-#eventWrap .eventList .eSlider2 { background-image: url(../images/eventbg2.png) }
-#eventWrap .eventList .eSlider3 { background-image: url(../images/eventbg3.jpg) }
+#eventWrap .eventList .eSlider2 { background-image: url(../images/eventbg2.jpg) }
+#eventWrap .eventList .eSlider3 { background-image: url(../images/eventbg3.png) }
 #eventWrap .eventList .eSlider4 { background: url(../images/eventbg4.jpg) no-repeat center / cover }
-#eventWrap .eventList .eSlider5 { background-image: url(../images/eventbg5.png) }
-#eventWrap .eventList .eSlider6 { background-image: url(../images/eventbg6.png) }
-#eventWrap .on { z-index: 1; }
+
+#eventWrap .on { z-index: 9; }
+.eventList li p {
+
+}
 .eSlider1 p:nth-child(1) {
     padding: 60px;
     font-size: 60px;
@@ -177,34 +188,34 @@ body {
     position: relative; left: 60px;
 }
 .eSlider2 p:nth-child(1) {
-    padding: 60px 0 30px 60px;
+    padding: 60px 0 10px 60px;
     font-size: 60px;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider2 p:nth-child(2) span {
     font-size: 70px;
-    color: #ff2b2b;
+    color: #cac833;
 }
 .eSlider2 p:nth-child(2) {
-    padding: 60px;
+    padding: 0 0 120px 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider2 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider2 p:nth-child(4) {
     padding: 20px 0 0 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
@@ -218,33 +229,33 @@ body {
 .eSlider3 p:nth-child(1) {
     padding: 60px 0 30px 60px;
     font-size: 60px;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider3 p:nth-child(2) span {
     font-size: 70px;
-    color: #ff2b2b;
+    color: #d8c77c;
     font-weight: bold;
 }
 .eSlider3 p:nth-child(2) {
     padding: 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider3 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider3 p:nth-child(4) {
     padding: 20px 0 0 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
@@ -256,35 +267,35 @@ body {
     position: relative; left: 60px;
 }
 .eSlider4 p:nth-child(1) {
-    padding: 60px 0 30px 60px;
+    padding: 60px 0 20px 60px;
     font-size: 60px;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider4 p:nth-child(2) span {
     font-size: 70px;
-    color: #ff2b2b;
+    color: #ffffff;
     font-weight: bold;
 }
 .eSlider4 p:nth-child(2) {
     padding: 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider4 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
 .eSlider4 p:nth-child(4) {
     padding: 20px 0 0 60px;
     font-size: 40px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
     opacity: 0.8;
 }
