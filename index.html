@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>집 꾸미기</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/common.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="js/common.js" defer></script>
@@ -37,17 +41,22 @@
                             <li><a href="#">베스트</a></li>
                             <li><a href="#">오늘의 인기상품</a></li>
                             <li><a href="#">특가</a></li>
-                            <li><a href="#">공간</a></li>
-                            <li><a href="#">기획</a></li>
+                            <li><a href="#">기획전</a></li>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">나만없어</a></li>
                         </ul>
                     </li> <!-- 리스트는 전부 가로배열로 보여지게 할 예정 -->
                     <li>
                         <a href="#">커뮤니티</a>
                         <ul class="snb">
                             <li><a href="#">랜선집들이</a></li>
+                            <li><a href="#">연령별추천</a></li>
                             <li><a href="#">인테리어 팁</a></li>
-                            <li><a href="#">감성공간</a></li>
-                            <li><a href="#">QnA</a></li>
+                            <li><a href="#">아파트</a></li>
+                            <li><a href="#">오피스텔/원룸</a></li>
+                            <li><a href="#">질문과답변</a></li>
+                            <li><a href="#">집꾸미기채널</a></li>
+                            <li><a href="#">이벤트</a></li>
                         </ul>
                     </li>
                     <li>
@@ -125,7 +134,7 @@
             <h2 class="hidden">스토어</h2>
             <section id="sale" class='s_show'>
                 <div id="saleWrap"> <!-- 컨버스 모방 -->
-                    <h3>특가상품</h2>
+                    <h3>특가상품</h3>
                         <div id="scale">
                             <div class="scale1 block">
                                 <div class="big show">
@@ -136,7 +145,7 @@
                             </div>
                             <div class="scale2 block">
                                 <div class="side show">
-                                    <p>USA 정형외과 의사들의 침대</p>
+                                    <p>미국 정형외과 의사들의 침대</p>
                                     <p>과학과 의학의 만남 <span>Sealy</span></p>
                                     <a href="">더 알아보기</a>
                                 </div>
@@ -192,13 +201,13 @@
                                 <a href="" class="pro7">상품</a>
                                 <p>◆인기절정◆ 비앙카 LED 수납 침대 SS/Q/K 3colors</p>
                                 <p><span>59%</span> 184,900원</p>
-                                <p><span>첫구매쿠폰</span>179,900원</p>
+                                <p><span>첫구매쿠폰</span> 179,900원</p>
                             </div>
                             <div class="best_product">
                                 <a href="" class="pro8">상품</a>
                                 <p>[1만원 추가 할인 쿠폰] 차이슨 무선청소기 D10 물걸레청소겸용(키트별도구매)</p>
                                 <p><span>34%</span> 118,000원</p>
-                                <p><span>쿠폰가</span>108,000원</p>
+                                <p><span>쿠폰가</span> 108,000원</p>
                             </div>
                             <div class="best_product">
                                 <a href="" class="pro9">상품</a>
@@ -214,18 +223,70 @@
                     </div>
                     <a href="#">더 보기</a>
                 </section>
-                <section id="todayBestWrap" class='s_show'>
-                    <h3>오늘의 인기상품</h3>
-                    <a href="#">더 알아보기</a>
-                    <div id="todayBest">
-                        <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <section id="hot_product">
+                    <h3>
+                        오늘의 인기상품
+                    </h3>
+                    <br />
+                    <div class="bottom_line"></div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>방구석맞춤 우주여행 오로라 무드등 LED</p>
+                            <p><span>33%</span>45,900원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>[상품권 증정]이든 행거형 철제 드레스룸 4colors</p>
+                            <p><span>58%</span> 54,900원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>헤이홈 스마트 홈카메라</p>
+                            <p><span>51%</span> 39,500원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>캔버스 LED 조명 액자</p>
+                            <p><span>42%</span> 28,900원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>불멍 무드등 LED 램프 특대형</p>
+                            <p><span>43%</span> 24,900원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>1+1 손잡이뉴메가 대용량 텀블러 900ml 3종세트(손잡이+뚜껑 증정)
+                            </p>
+                            <p><span>41%</span> 18,900원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>쟈가드 사계절 먼지없는 러그</p>
+                            <p><span>쿠폰가</span> 24,750원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>[후기 2400개 이상] LED 시계 11종</p>
+                            <p><span>61%</span> 13,800원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>원터치 분리수거함 모음전 (분리수거 5종 스티커 증정)</p>
+                            <p><span>51%</span> 22,900원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""></a>
+                            <p>[아마존 Best] 하이브리드 스프링 매트리스 모음</p>
+                            <p><span>39%</span> 109,650원</p>
+                            <p><span>첫구매쿠폰</span>104,650원</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">더보기</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
@@ -295,5 +356,17 @@
             </ul>
         </div>
     </footer>
+                    <!-- Swiper JS -->
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        watchSlidesProgress: true,
+                        slidesPerView: 5,
+                    });
+                    </script>
+
+    
 </body>
 </html>

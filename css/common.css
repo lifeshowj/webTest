@@ -47,10 +47,11 @@ body {
     /* overflow: hidden; */
 }
 #gnb > li {
-    width: 150px; height: 50px;
+    width: 150px; height: 60px;
     float: left;
     text-align: center;
 }
+
 #gnb > li> a {
     display: block;
     height: 50px;
@@ -65,7 +66,12 @@ body {
     width: 1000px;    
 }
 #gnb .snb li {
-    width: 90px; height: 50px;
+    width: 100px; height: 50px;
+    float: left;
+}
+
+#gnb .snb li:nth-child(2) {
+    width: 150px; height: 50px;
     float: left;
 }
 #gnb .snb li a {
@@ -118,7 +124,7 @@ body {
     text-indent: -9999px;
     background: url(../images/cart.png) no-repeat center/ contain;
 }
-/* event */
+/* #######event####### */
 #event {
     width: 1800px; height: 1000px;
     margin: 0 auto;
@@ -161,7 +167,7 @@ body {
     font-size: 60px;
     color: #fff;
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider1 p:nth-child(1) span {
     font-size: 70px;
@@ -171,14 +177,14 @@ body {
     font-size: 40px;
     color: #fff;
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider1 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: #fff;
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider1 a {
     padding: 6px;
@@ -192,7 +198,7 @@ body {
     font-size: 60px;
     color: #ffffff;
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider2 p:nth-child(2) span {
     font-size: 70px;
@@ -203,21 +209,21 @@ body {
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider2 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider2 p:nth-child(4) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider2 a {
     padding: 6px;
@@ -231,7 +237,7 @@ body {
     font-size: 60px;
     color: #ffffff;
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider3 p:nth-child(2) span {
     font-size: 70px;
@@ -243,21 +249,21 @@ body {
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider3 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider3 p:nth-child(4) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider3 a {
     padding: 6px;
@@ -271,7 +277,7 @@ body {
     font-size: 60px;
     color: #ffffff;
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider4 p:nth-child(2) span {
     font-size: 70px;
@@ -283,21 +289,21 @@ body {
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider4 p:nth-child(3) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider4 p:nth-child(4) {
     padding: 20px 0 0 60px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Jeju Gothic', sans-serif;
-    opacity: 0.8;
+    
 }
 .eSlider4 a {
     padding: 6px;
@@ -344,7 +350,8 @@ body {
 #numBtn .active {
     background-image: url(../images/numbtn2.png);
 }
-/* sale product */
+
+/* #######sale product####### */
 #sale { 
     width: 100%; height: 1200px;
 }
@@ -369,7 +376,7 @@ body {
     transform: scale(1.03);
     }
 #saleWrap h3 { 
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Jeju Gothic', sans-serif;
     margin-bottom: 10px;
 }
@@ -452,7 +459,8 @@ body {
 }
 #saleWrap .side p span {
     font-weight: bold;
-    color: #e44433;
+    font-size: 30px;
+    color: #337ae4;
 }
 #saleWrap .side a {
     width: 100px;
@@ -502,9 +510,10 @@ body {
 #saleWrap .side1 a:hover {
     opacity: 1;
 }
-/* best product */
+
+/* ########best product########## */
 #bestWrap {
-    width: 100%; height: 700px;
+    width: 100%; height: 800px;
 }
 #best {
     width: 1800px; height: 550px;
@@ -531,7 +540,7 @@ body {
     border-bottom: 1px solid #b1b1b1;
 }
 #best_text h3 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 10px;
     font-family: 'Jeju Gothic', sans-serif;
 }
@@ -543,7 +552,7 @@ body {
     color: #f15c4b;
     font-family: 'Jeju Gothic', sans-serif;
 }
-#best_text > a:hover {
+#bestWrap > a:hover {
     color: #3dbcdb;
 }
 #best_productWrap {
@@ -562,11 +571,15 @@ body {
     background: no-repeat center/cover;
 }
 #best_productWrap  .best_product p {
+    margin-bottom: 4px;
     font-family: 'Jeju Gothic', sans-serif;
 }
 #best_productWrap  .best_product span {
-    color: #f15c4b;
-    font-size: 20px;
+    color: #ffffff;
+    background-color: #fa7655;
+    border-radius: 10%;
+    padding: 3px;
+    font-size: 15px;
 }
 #best_productWrap  .best_product .pro1 {
     background-image: url(../images/bestbg1.jpg)
@@ -598,3 +611,85 @@ body {
 #best_productWrap  .best_product .pro10 {
     background-image: url(../images/bestbg10.jpg)
 }
+
+/* hot product */
+#hot_product {
+    width: 1800px; height: 600px;
+    margin: 0 auto;
+}
+.bottom_line {
+    width: 1800px;
+    margin: 0 auto 10px;
+    border-bottom: 1px solid #b1b1b1;
+}
+.mySwiper {
+    padding: 10px 0;
+}
+
+.swiper {
+    width: 1800px;
+  }
+.swiper-wrapper {
+    padding-left: 0px;
+    height: 500px;
+}
+#hot_product h3 {
+font-size: 30px;
+font-family: 'Jeju Gothic', sans-serif;
+}
+.swiper-slide {
+height: 440px;
+margin-right: 20px;
+}
+.swiper-slide p {
+    margin-top: 10px;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+.swiper-slide span {
+    color: #ffffff;
+    background-color: #fa7655;
+    border-radius: 10%;
+    padding: 1px;
+}
+.swiper-slide a {
+display: block;
+width: 360px; height: 380px;
+float: left;
+background: no-repeat center / contain;
+}
+
+.swiper-slide:nth-child(1) a {
+    background-image: url(../images/hot1.jpg)
+}
+.swiper-slide:nth-child(2) a{
+    background-image: url(../images/hot2.jpg)
+}
+.swiper-slide:nth-child(3) a{
+    background-image: url(../images/hot3.jpg)
+}
+.swiper-slide:nth-child(4) a{
+    background-image: url(../images/hot4.jpg)
+}
+.swiper-slide:nth-child(5) a{
+    background-image: url(../images/hot5.jpg)
+}
+.swiper-slide:nth-child(6) a{
+    background-image: url(../images/hot6.jpg)
+}
+.swiper-slide:nth-child(7) a{
+    background-image: url(../images/hot7.jpg)
+}
+.swiper-slide:nth-child(8) a{
+    background-image: url(../images/hot8.jpg)
+}
+.swiper-slide:nth-child(9) a{
+    background-image: url(../images/hot9.jpg)
+}
+.swiper-slide:nth-child(10) a{
+    background-image: url(../images/hot10.jpg)
+}
+.swiper-slide:nth-child(11) a{
+    text-indent: -9999px;
+    background: url(../images/more.png) no-repeat 10px 150px / 80px;
+}
+
