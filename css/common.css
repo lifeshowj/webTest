@@ -697,10 +697,10 @@ background: no-repeat center / contain;
 /* 랜선 집들이 */
 
 #home_view {
-    width: 100%; height: 1200px;
+    width: 100%; height: 1050px;
 }
 #home_wrap {
-    width: 1800px; height: 1200px;
+    width: 1800px; height: 900px;
     margin: 0 auto;
 }
 #home_wrap .wrapper {

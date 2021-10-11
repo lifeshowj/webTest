@@ -104,3 +104,5 @@ $("#numBtn a").on('click', function (e) {
 //       }
 //   })
 // })
+
+// plugin 
