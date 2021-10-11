@@ -549,6 +549,7 @@ body {
     display: block;
     margin: 20px 0 0 ;
     width: 70px;
+    text-indent: -9999px;
     font-size: 20px;
     color: #f15c4b;
     font-family: 'Jeju Gothic', sans-serif;
@@ -653,10 +654,11 @@ margin-right: 20px;
     padding: 1px;
 }
 .swiper-slide a {
-display: block;
-width: 360px; height: 380px;
-float: left;
-background: no-repeat center / contain;
+    text-indent: -9999px;
+    display: block;
+    width: 360px; height: 380px;
+    float: left;
+    background: no-repeat center / contain;
 }
 
 .swiper-slide:nth-child(1) a {
@@ -711,4 +713,27 @@ background: no-repeat center / contain;
     font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Jeju Gothic', sans-serif;
+}
+
+/* ####### key_word ####### */
+#keywordSection {
+    width: 100%; height: 900px;
+}
+#key_word_wrap {
+    width: 1800px; height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+#key_word_text {
+    width: 500px; height: 900px;
+    float: left;
+    border: 1px solid black;
+}
+#key_word_text h3 { 
+    font-size: 40px;
+    margin-top: 300px;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#key_word_text p {
+
 }
