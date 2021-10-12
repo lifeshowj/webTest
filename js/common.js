@@ -1,17 +1,19 @@
-// window.onload = function() {
-//   setTimeout (function () {
-//   scrollTo(0,0);
-//   }, 100);
-// }
+window.onload = function() {
+  setTimeout (function () {
+  scrollTo(0,0);
+  }, 100);
+}
 // header hover
-$('#gnb>li').on('mouseenter', function(){
-    $('#header').stop().animate({ height: 100 })
-    $(this).children('a').css({ color: '#df6562' })
-    $(this).children('ul').show()
+$('a').on('click',function(e){
+  e.preventDefault()
+})
+// $('.snb').hide()
+$('#gnb > li').on('mouseenter', function(){
+  $('#header').css({ height: 460 })
+  $('#gnbWrap').css({ overflow: 'visible'})
 }).on('mouseleave', function(){
-    $('#header').stop().animate({ height: 50 })
-    $(this).children('a').css({ color: 'black' })
-    $(this).children('ul').hide()
+  $('#header').css({ height: 70 })
+  $('#gnbWrap').css({ overflow: 'hidden'})
 })
 
 // evnet slider
