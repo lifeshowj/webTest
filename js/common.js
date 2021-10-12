@@ -1,13 +1,15 @@
-window.onload = function() {
-  setTimeout (function () {
-  scrollTo(0,0);
-  }, 100);
-}
+// window.onload = function() {
+//   setTimeout (function () {
+//   scrollTo(0,0);
+//   }, 100);
+// }
 // header hover
 $('#gnb>li').on('mouseenter', function(){
+    $('#header').stop().animate({ height: 100 })
     $(this).children('a').css({ color: '#df6562' })
     $(this).children('ul').show()
 }).on('mouseleave', function(){
+    $('#header').stop().animate({ height: 50 })
     $(this).children('a').css({ color: 'black' })
     $(this).children('ul').hide()
 })
@@ -94,15 +96,31 @@ $("#numBtn a").on('click', function (e) {
         e.preventDefault()
     }
 })
-// $(window).on('scroll', function(){
-//   $('.s_show').each(function(e){
-//       if ($(window).scrollTop() > $(this).position().top - 700) {
-//           $(this).not(':animated').animate({ opacity: 1 }, 500)
-//       }
-//       else {
-//           $(this).not(':animated').animate({ opacity : 0 }, 500)
-//       }
-//   })
-// })
 
-// plugin 
+// hashTag section
+
+$('#hashTag_list li:eq(0)').on('mouseenter', function(){
+    $('#key_word_list li').removeClass('_on')
+    $(this).css({ overflow: 'visible', borderTop: '2px solid #000'}).stop().animate({ height: 100 })
+    $(this).addClass('_active')
+    $('#key_word_list li:eq(0)').addClass('_on')
+}).on('mouseleave', function(){
+    $(this).removeClass('_active')
+})
+$('#hashTag_list li:eq(1)').on('mouseenter', function(){
+  $('#key_word_list li').removeClass('_on')
+  $(this).css({ overflow: 'visible', borderTop: '2px solid #000'}).stop().animate({ height: 100 })
+  $(this).addClass('_active')
+  $('#key_word_list li:eq(1)').addClass('_on')
+}).on('mouseleave', function(){
+  $(this).removeClass('_active')
+})
+$('#hashTag_list li:eq(2)').on('mouseenter', function(){
+  $('#key_word_list li').removeClass('_on')
+  $(this).css({ overflow: 'visible', borderTop: '2px solid #000'}).stop().animate({ height: 100 })
+  $(this).addClass('_active')
+  $('#key_word_list li:eq(2)').addClass('_on')
+}).on('mouseleave', function(){
+  $(this).removeClass('_active')
+})
+
