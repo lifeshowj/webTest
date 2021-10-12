@@ -100,27 +100,21 @@ $("#numBtn a").on('click', function (e) {
 // hashTag section
 
 $('#hashTag_list li:eq(0)').on('mouseenter', function(){
-    $('#key_word_list li').removeClass('_on')
-    $(this).css({ overflow: 'visible', borderTop: '2px solid #000'}).stop().animate({ height: 100 })
+    $('#hashTag_list li').removeClass('_active')
     $(this).addClass('_active')
+    $('#key_word_list li').removeClass('_on')
     $('#key_word_list li:eq(0)').addClass('_on')
-}).on('mouseleave', function(){
-    $(this).removeClass('_active')
 })
 $('#hashTag_list li:eq(1)').on('mouseenter', function(){
-  $('#key_word_list li').removeClass('_on')
-  $(this).css({ overflow: 'visible', borderTop: '2px solid #000'}).stop().animate({ height: 100 })
-  $(this).addClass('_active')
-  $('#key_word_list li:eq(1)').addClass('_on')
-}).on('mouseleave', function(){
-  $(this).removeClass('_active')
+    $('#hashTag_list li').removeClass('_active')
+    $(this).addClass('_active')
+    $('#key_word_list li').removeClass('_on')
+    $('#key_word_list li:eq(1)').addClass('_on')
 })
 $('#hashTag_list li:eq(2)').on('mouseenter', function(){
-  $('#key_word_list li').removeClass('_on')
-  $(this).css({ overflow: 'visible', borderTop: '2px solid #000'}).stop().animate({ height: 100 })
-  $(this).addClass('_active')
-  $('#key_word_list li:eq(2)').addClass('_on')
-}).on('mouseleave', function(){
-  $(this).removeClass('_active')
+    $('#hashTag_list li').removeClass('_active')
+    $(this).addClass('_active')
+    $('#key_word_list li').removeClass('_on')
+    $('#key_word_list li:eq(2)').addClass('_on')
 })
 

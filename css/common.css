@@ -8,20 +8,20 @@
 * { margin: 0; padding: 0; }
 a { text-decoration: none; color: #000;}
 li { list-style: none; }
+address { font-style: normal; }
 .hidden { position: absolute; left: -9999px; }
 /* header */
 body { 
-    margin: 15px 0;
     width: 100%; 
     min-width: 1200px; }
 #header { 
     width: 100%; height: 50px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 #header::before { 
     content: ""; 
-    position: absolute; top: 69px;
-    width:100%; 
+    position: absolute; top: 55px;
+    width: 100%; 
     border-bottom: 1px solid rgb(194, 190, 190) 
     }
 #top_section {
@@ -65,7 +65,7 @@ body {
     width: 1000px;    
 }
 #gnb .snb li {
-    width: 100px; height: 50px;
+    width: 110px; height: 50px;
     float: left;
 }
 
@@ -125,18 +125,18 @@ body {
 }
 /* #######event####### */
 #event {
-    width: 1800px; height: 650px;
+    width: 100%; height: 650px;
     margin: 0 auto;
     position: relative;
 }
 #eventWrap { 
     position: relative;
-    width: 1800px; height: 600px;
+    width: 100%; height: 600px;
     margin: 5px auto;
     overflow: hidden;
 }
 #eventWrap .eventList {
-    width: 1800px; height: 600px;
+    width: 100%; height: 600px;
 }
 #eventWrap .eventList li {
     position: absolute; top: 0; left: 0;
@@ -598,6 +598,15 @@ body {
     margin-right: 20px;
     float: left;
 }
+.best_product {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out; 
+}
+.best_product:hover a {
+    transform: scale(1.03);
+    transition: 0.3s
+}
+
 #best_productWrap .best_product a {
     width: 440px; height: 440px;
     display: block;
@@ -669,8 +678,11 @@ body {
     height: 500px;
 }
 #hot_product h3 {
-font-size: 30px;
-font-family: 'Jeju Gothic', sans-serif;
+    font-size: 30px;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+#hot_product .swiper > p {
+    font-family: 'Jeju Gothic', sans-serif;
 }
 .swiper-slide {
 height: 440px;
@@ -749,7 +761,7 @@ margin-right: 20px;
 }
 /* ####### key_word ####### */
 #keywordSection {
-    width: 100%; height: 700px;
+    width: 100%; height: 800px;
 }
 #key_word_wrap {
     width: 1800px; height: 700px;
@@ -787,12 +799,13 @@ margin-right: 20px;
 }
 #key_word_img ._on {
     z-index: 9;
+    transition: 0.5s;
 }
 #key_word_img li:nth-child(1) {
     background-image: url(../images/hashbg1.jpg)
 }
 #key_word_img li:nth-child(2) {
-    background-image: url(../images/hashbg2.jpeg)
+    background-image: url(../images/hashbg2.jpg)
 }
 #key_word_img li:nth-child(3) {
     background-image: url(../images/hashbg3.jpg)
@@ -806,16 +819,20 @@ margin-right: 20px;
     float: right;
 }
 #hashTag_list li {
-    width: 500px; height: 70px;
+    width: 300px; height: 65px;
     padding: 10px 0 0 80px;
     position: relative;
     margin-bottom: 10px;
     border-top: 2px solid #b1b1b1;
     overflow: hidden;
+    font-family: 'Jeju Gothic', sans-serif;
 }
 #hashTag_list li._active {
-    z-index: 9999;
     overflow: visible;
+    height: 100px;
+    border-top: 2px solid #000; 
+    z-index: 999;
+    transition: 0.5s
 }
 #hashTag_list > p, #hashTag_list > a {
     font-family: 'Jeju Gothic', sans-serif;
@@ -831,3 +848,25 @@ margin-right: 20px;
     color: #fff;
     background-color: #000000;
 }
+#footer {
+    background-color: #e0e0e0;
+}
+#footer_wrap {
+    width: 1800px; height: 150px;
+    padding: 50px;
+    margin: 0 auto;
+}
+#footer_wrap a {
+    font-weight: bold;
+}
+#footer_wrap .footer_text {
+    float: left;
+}
+#footer .sns { float: right; height: 33px; margin-top: 100px;}
+#footer .sns li { width: 33px; height: 33px; float: left; margin-left: 17px;  }
+#footer .sns li a { display: block; width: 33px; height: 33px; text-indent: -9999px;}
+#snsWrap { margin-right: 140px; }
+.face { background: url(../images/fb.png) no-repeat center/cover; }
+.twit { background: url(../images/tw.png) no-repeat center/cover; }
+.yout { background: url(../images/ytube.png) no-repeat center/cover; }
+.goog { background: url(../images/gp.png) no-repeat center/cover; }
