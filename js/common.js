@@ -9,7 +9,7 @@ $('a').on('click',function(e){
 })
 // $('.snb').hide()
 $('#gnb > li').on('mouseenter', function(){
-  $('#header').css({ height: 460 })
+  $('#header').css({ height: 450 })
   $('#gnbWrap').css({ overflow: 'visible'})
 }).on('mouseleave', function(){
   $('#header').css({ height: 70 })
