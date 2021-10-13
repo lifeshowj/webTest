@@ -356,7 +356,7 @@ body {
 
 /* #######sale product####### */
 #sale { 
-    width: 100%; height: 1200px;
+    width: 100%; height: 1000px;
     margin-top: 100px;
 }
 #saleWrap {
@@ -365,7 +365,7 @@ body {
     
 }
 #scale {
-    width: 1800px; height: 1000px;
+    width: 1800px; height: 800px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -401,7 +401,7 @@ body {
     color: #3dbcdb;
 }
 #saleWrap .scale1 {
-    width: 900px; height: 1000px;
+    width: 960px; height: 800px;
     position: relative;
     float: left;
 }
@@ -409,11 +409,11 @@ body {
     content:"";
     background-color: #464646;
     position: absolute; top:0; left:0;
-    width: 900px; height: 1000px;
+    width: 960px; height: 800px;
     opacity: 0.4;
 }
 #saleWrap .scale2 {
-    width: 900px; height: 500px;
+    width: 840px; height: 400px;
     position: relative;
     float: right;
 }
@@ -421,11 +421,11 @@ body {
     content:"";
     background-color: #464646;
     position: absolute; top:0; left:0;
-    width: 900px; height: 500px;
+    width: 840px; height: 400px;
     opacity: 0.4;
 }
 #saleWrap .scale3 {
-    width: 900px; height: 500px;
+    width: 840px; height: 400px;
     position: relative;
     float: right;
 }
@@ -433,11 +433,11 @@ body {
     content:"";
     background-color: #464646;
     position: absolute; top:0; left:0;
-    width: 900px; height: 500px;
+    width:8400px; height: 400px;
     opacity: 0.4;
 }
 #saleWrap .big {
-    width: 900px; height: 1000px;
+    width: 960px; height: 800px;
     float: left;
     background: url(../images/salebg1.jpg) no-repeat center / cover;
 }
@@ -476,7 +476,7 @@ body {
     opacity: 1;
 }
 #saleWrap .side {
-    width: 900px; height: 500px;
+    width: 840px; height: 400px;
     background: url(../images/salebg2.jpg) no-repeat center / cover;
 }
 #saleWrap .scale2 p:nth-child(1) {
@@ -511,8 +511,8 @@ body {
     opacity: 1;
 }
 #saleWrap .side1 {
-    width: 900px; height: 500px;
-    background: url(../images/salebg3.jpg) no-repeat bottom / cover;
+    width: 840px; height: 400px;
+    background: url(../images/salebg3.jpg) no-repeat center / cover;
 }
 #saleWrap .scale3 p:nth-child(1) {
     padding: 20px 0 0 30px;
